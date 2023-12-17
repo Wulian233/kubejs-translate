@@ -83,12 +83,12 @@ def replace_keys_in_js(json_file, folder_path):
 
                 # 遍历翻译字典，将匹配的键替换为对应的值
                 for key, value in translation_dict.items():
-                    js_content = js_content.replace(f'{key}', f'\'{value}\'')
+                    js_content = js_content.replace(f'{key}', f'{value}')
 
                 # 写回原始文件
                 with open(file_path, 'w', encoding='utf-8') as file:
                     file.write(js_content)
-            dialogs.show_message('KubeJS翻译工具', 'KubeJS翻译工具回填翻译成功')
+    dialogs.show_message('KubeJS翻译工具', 'KubeJS翻译工具回填翻译成功')
 
 def runFromGui():
     if len(kubejs_var.get()) == 0 and mode_entry.get() == "提取":
@@ -110,7 +110,7 @@ def runFromGui():
                             # 生成随机键
                             random_key = f'kubejs.{filename[:-3]}.{"".join(choices("abcdefghijklmnopqrstuvwxyz", k=5))}'
                             # 替换匹配的内容为随机键
-                            js_content = js_content.replace(f'{prefix}(\'{match}\')', f'{prefix}({random_key})')
+                            js_content = js_content.replace(f'{prefix}(\'{match}\')', f'{prefix}(\'{random_key}\')')
                             # 添加到翻译字典中
                             translation_dict[random_key] = match
                     # 写回原始文件
