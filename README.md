@@ -3,7 +3,7 @@
 </div>
 <div align="center">
     <a href="https://github.com/Wulian233/kubejs-translate/blob/main/LICENSE">
- <img src="https://img.shields.io/badge/license-MIT%203.0-yellow.svg" alt="license">
+ <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="license">
     </a>
     <a href="https://pypi.org/project/sv-ttk">
         <img src="https://img.shields.io/badge/lib-svttk-brightgreen" alt="lib">
@@ -20,7 +20,7 @@
 
 ### 介绍:
 
-一个辅助翻译我的世界整合包KubeJS魔改内容的工具
+一个辅助翻译我的世界KubeJS魔改内容的工具
 
 你可以用它:
 1. 快速找到整合包中需要翻译的KubeJS魔改内容，并提取出相应语言文件
@@ -39,7 +39,7 @@
 </div>
 
 ### 可能遇到的问题
-1. Windows 7下提示缺少dll，不影响使用
+1. Windows 7 下提示缺少dll，不影响使用
 
 ### 未来的计划
 1. 支持对kubeJS更多类型的处理
