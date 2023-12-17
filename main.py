@@ -13,7 +13,7 @@ from tkinter.ttk import *
 prefixes = [
     "tooltip", "displayName", "Text.yellow", "Text.of", "Text.white",
     "Text.green", "Text.gray", "Text.gold", "Text.darkPurple",
-    "Text.blue", "Text.darkGreen", "Text.aqua", "Text.red"
+    "Text.blue", "Text.darkGreen", "Text.aqua", "Text.red", "tell"
 ]
 
 # 定义存储键值对的字典
@@ -108,7 +108,7 @@ def runFromGui():
                         matches = pattern.findall(js_content)
                         for match in matches:
                             # 生成随机键
-                            random_key = 'kubejs.key.' + ''.join(choices("abcdefghijklmnopqrstuvwxyz", k=5))
+                            random_key = f'kubejs.{filename[:-3]}.{"".join(choices("abcdefghijklmnopqrstuvwxyz", k=5))}'
                             # 替换匹配的内容为随机键
                             js_content = js_content.replace(f'{prefix}(\'{match}\')', f'{prefix}({random_key})')
                             # 添加到翻译字典中
