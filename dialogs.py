@@ -14,55 +14,14 @@ def show_message(title="Title", details="Description", *, parent=None, icon=None
     )
 
 
-def ask_ok_cancel(title="Title", details="Description", *, parent=None, icon=None):
-    return popup(
-        parent,
-        title,
-        details,
-        icon,
-        buttons=[("Yes", True, "accent"), ("Cancel", None)],
-    )
-
-
 def ask_yes_no(title="Title", details="Description", *, parent=None, icon=None):
     return popup(
         parent,
         title,
         details,
         icon,
-        buttons=[("Yes", True, "accent"), ("No", False)],
+        buttons=[("开启", True, "accent"), ("关闭", False)],
     )
-
-
-def ask_yes_no_cancel(title="Title", details="Description", *, parent=None, icon=None):
-    return popup(
-        parent,
-        title,
-        details,
-        icon,
-        buttons=[("Yes", True, "accent"), ("No", False), ("Cancel", None)],
-    )
-
-
-def ask_retry_cancel(title="Title", details="Description", *, parent=None, icon=None):
-    return popup(
-        parent,
-        title,
-        details,
-        icon,
-        buttons=[("重试", True, "accent"), ("Cancel", None)],
-    )
-
-
-def ask_allow_block(title="Title", details="Description", *, parent=None, icon=None):
-    return popup(
-        parent,
-        title,
-        details,
-        icon,
-        buttons=[("运行", True, "accent"), ("禁止", False)],
-    )
-
 
 def popup(parent, title, details, icon, *, buttons):
     dialog = tk.Toplevel()
@@ -174,5 +133,5 @@ if __name__ == "__main__":
 
     sv_ttk.use_light_theme()
 
-    window.geometry("600x600")
+    window.geometry("600x300")
     window.mainloop()
