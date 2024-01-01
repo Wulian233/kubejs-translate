@@ -11,8 +11,8 @@
     <a href="https://vmct-cn.top/kubejs/">
         <img src="https://img.shields.io/badge/website-purple" alt="website">
     </a>
-    <a href="https://github.com/Wulian233/kubejs-translate/releases/tag/1.0">
-        <img src="https://img.shields.io/badge/releases-1.0-blue" alt="releases">
+    <a href="https://github.com/Wulian233/kubejs-translate/releases/tag/1.2">
+        <img src="https://img.shields.io/badge/releases-1.2-blue" alt="releases">
     </a>
 
 # KubeJS翻译工具
@@ -44,7 +44,6 @@
 ### 未来的计划
 1. 支持对kubeJS更多类型的处理
 2. 支持用户自己输入前缀匹配提取，生成配置文件
-3. 支持查看工作时间
 
 ### 感谢
 1. [Sun-Valley-ttk-theme](https://github.com/rdbende/Sun-Valley-ttk-theme)--界面主题美化
